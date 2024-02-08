@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+
+  h1{text-align: center;
+  }
+  
+  .calculator {
+    background-color: #eee; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .calculator #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .calculator .buttons button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: #ddd; /* Light gray background for buttons */
+    color: #333; /* Dark gray text color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculator .buttons button:hover {
+    background-color: #bbb; /* Lighter gray background on hover */
+  }
+  
+  .calculator .buttons button:active {
+    transform: translateY(2px);
+  }
+  
+  .calculator .buttons button:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .calculator .buttons button.operator {
+    background-color: #26b4ec; /* Orange background for operator buttons */
+    color: #fff; /* White text color for contrast */
+  }
+  
+  .calculator .buttons button.equal {
+    background-color: #2ecc71; /* Green background for equal button */
+  }
+  
+  .calculator .buttons button.clear {
+    background-color: #e74c3c; /* Red background for clear button */
+  }
+  
+  .calculator .buttons button:hover.operator {
+    background-color: #0ce7ff; /* Brighter orange on hover for operator buttons */
+  }
+  
+  .calculator .buttons button:hover.equal {
+    background-color: #27ae60; /* Brighter green on hover for equal button */
+  }
+  
+  .calculator .buttons button:hover.clear {
+    background-color: #c0392b; /* Brighter red on hover for clear button */
+  }
+  
